@@ -34,41 +34,71 @@
   "contributes": {
     "languages": [
       {
-        "id": "html",
+        "id": "hugo.html",
         "aliases": [
-          "HTML",
           "HTML (Hugo)"
         ],
-        "extensions": [
-          ".html",
-          ".htm",
-          ".xhtml"
+        "configuration": "./hugo.configuration.json"
+      },
+      {
+        "id": "hugo.json",
+        "aliases": [
+          "JSON (Hugo)"
+        ],
+        "configuration": "./hugo.configuration.json"
+      },
+      {
+        "id": "hugo.markdown",
+        "aliases": [
+          "Markdown (Hugo)"
+        ],
+        "configuration": "./hugo.configuration.json"
+      },
+      {
+        "id": "hugo.toml",
+        "aliases": [
+          "TOML (Hugo)"
         ],
         "configuration": "./hugo.configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "html",
+        "language": "hugo.html",
+        "scopeName": "text.html.hugo",
+        "path": "./src/syntaxes/hugo.tmLanguage.json"
+      },
+      {
+        "language": "hugo.json",
+        "scopeName": "text.html.hugo",
+        "path": "./src/syntaxes/hugo.tmLanguage.json"
+      },
+      {
+        "language": "hugo.markdown",
+        "scopeName": "text.html.hugo",
+        "path": "./src/syntaxes/hugo.tmLanguage.json"
+      },
+      {
+        "language": "hugo.toml",
         "scopeName": "text.html.hugo",
         "path": "./src/syntaxes/hugo.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "html",
+        "language": "hugo.html",
         "path": "./src/snippets/hugo.code-snippets.json"
       },
       {
-        "language": "json",
+        "language": "hugo.json",
         "path": "./src/snippets/hugo.code-snippets.json"
       },
       {
-        "language": "markdown",
+        "language": "hugo.markdown",
         "path": "./src/snippets/md.snippets.json"
       },
       {
-        "language": "toml",
+        "language": "hugo.toml",
         "path": "./src/snippets/md.snippets.json"
       }
     ]
